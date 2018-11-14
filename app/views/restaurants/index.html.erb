@@ -1,8 +1,11 @@
-<div class="container">
+
+
+<div class="col-xs-12 col-sm-4">
+  <h1>All the restaurants</h1>
   <ul class="list-inline">
   <% @restaurants.each do |r| %>
-    <li><%= r.name %> - <%= r.address %></li>
-
+    <li><%= r.name %> - <%= link_to "Details", restaurant_path(r) %>
+    </li>
   <% end %>
   </ul>
 
