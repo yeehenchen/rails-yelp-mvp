@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Restaurant.delete_all
+
+Restaurant.create!(name:"wagas", address:"nangjing lu", phone_number:"123456", category:"chinese")
+
+puts "Successfully created #{Restaurant.count} restaurant!"
